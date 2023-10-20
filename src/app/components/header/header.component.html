@@ -1,1 +1,7 @@
-<p>Bem vindo!</p>
+
+<div *ngIf="recievedName; else elseBlock">
+    <p> Bem vindo, {{name}}</p>
+</div>
+
+<ng-template #elseBlock><p>Bem vindo!</p></ng-template>
+
